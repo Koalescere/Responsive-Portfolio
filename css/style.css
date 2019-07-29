@@ -134,6 +134,7 @@ footer{
 .work:nth-child(even){
     margin-right:  40px;
 }
+
 .work img{
     width: 250px;
     border: 0 none;
@@ -202,27 +203,23 @@ input[type=submit] {
     cursor: pointer;
 
 }
-
 @media screen and (max-width:  980px){
     .container{
         padding: 0 20px;
         max-width:  768px;
     }
-   #main-container {
-        padding-top:  0px;
-    }
     .main-section {
-        max-width:  100%;
+        max-width:  100%; 
     }
-    .work:nth-child(even) {
-        margin-right:  0;
+    #main-container {
+        padding-top: 0px;
     }
+           
     .auth-image{
         width:  100%;
         margin-bottom:  20px;
     }
 
-}
 
 @media screen and (max-width:  768px){
     .main-section {
@@ -231,18 +228,8 @@ input[type=submit] {
     #main-container{
         overflow: auto;
     }
-    .work{
-        width:  47%;
-        margin-bottom:  10px;
-    }
-    .work:nth-child(even) {
-        margin-right:  0;
-    }
-    .work:nth-child(odd){
-        float: right;      
-    }
     .auth-image{
-        width:  100%;
+        width:  50%;
     }
 }
 
@@ -251,17 +238,23 @@ input[type=submit] {
         position:  static;
         margin-bottom:  20px;
     }
+    
     header.container{
         padding: 0;
     }
+    
     #main-container {
-        padding-top:  0;
-        
+        padding-top:  0;    
     }
+
     #logo, .work, .auth-image{
         width:  100%;
     }
-    
+    .work{
+        margin-bottom:  10px;
+    }
+
+    }
     nav {
         text-align:  center;
         width:  100%;
@@ -272,5 +265,5 @@ input[type=submit] {
         padding-left:  0;
         margin-left:  0;
     }
-}
 
+}
